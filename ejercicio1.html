@@ -3,72 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejercicio 1 - Modelo de caja y Flexbox</title>
-  <link rel="stylesheet" href="estilos1.css">
+  <title>Ejercicio 1 - Veterinaria Huellitas</title>
+  <link rel="stylesheet" href="estilos.css">
+  <style>
+    /* CSS INTERNO: se aplica a los encabezados desde el head */
+    h1, h2 {
+      color: #1f6f6b;
+      font-family: Georgia, serif;
+    }
+    img { border-radius: 12px; object-fit: cover; object-position: 75% 0%; }
+  </style>
 </head>
 <body>
+  <h1>Veterinaria Huellitas</h1>
+  <h2>Cuidamos a tu mejor amigo</h2>
+  <img src="perro.png" alt="Perro golden retriever feliz" width="160" height="160">
+  <p>Somos una veterinaria de barrio con consultas, vacunas y estética canina para perros de todos los tamaños.</p>
+  <p style="color: #c4570a; font-weight: bold;">CSS en línea: este párrafo usa el atributo style directamente en la etiqueta.</p>
 
+  <h2>Nuestros servicios</h2>
+  <p>Consulta general, vacunación, desparasitación y baño.</p>
 
-  <header>
-    <h1>Ejercicio 1: Modelo de caja y Flexbox</h1>
-    <p>Actividad A6 &ndash; Fundamentos | Laboratorio de Programación Web</p>
-  </header>
+  <h2>Las tres formas de aplicar CSS</h2>
+  <p>Externo: el color de fondo y la tipografía del body vienen de estilos.css. Interno: el color de los encabezados viene de la etiqueta style del head. En línea: el párrafo naranja usa style en la propia etiqueta.</p>
 
-  <main>
-
-    <section class="instrucciones">
-      <h2>Instrucciones del ejercicio</h2>
-      <p><strong>Objetivo:</strong> comprender el modelo de caja y distribuir elementos con Flexbox.</p>
-      <ol>
-        <li>Crea un <code>div</code> y aplícale <code>width</code>, <code>padding</code>, <code>border</code>, <code>margin</code> y <code>border-radius</code>.</li>
-        <li>Crea un contenedor con tres tarjetas (<code>article</code>), cada una con título y texto.</li>
-        <li>Al contenedor aplícale <code>display: flex</code>, <code>flex-wrap: wrap</code> y <code>gap</code>.</li>
-        <li>A las tarjetas aplícales <code>flex: 1 1 200px</code> para que se ajusten al ancho disponible.</li>
-        <li>Agrega un efecto <code>:hover</code> a las tarjetas con <code>transform</code>.</li>
-        <li>Agrega una regla <code>@media (max-width: 600px)</code> para pantallas pequeñas.</li>
-      </ol>
-      <p><strong>Entrega:</strong> archivos <code>.html</code> y <code>.css</code> y capturas del resultado en pantalla completa y con la ventana reducida.</p>
-    </section>
-
-    <section>
-      <h2>El modelo de caja</h2>
-      <p>
-        Todo elemento HTML es una caja formada por cuatro capas: el contenido,
-        el <strong>padding</strong> (espacio interior), el <strong>border</strong>
-        (borde) y el <strong>margin</strong> (espacio exterior).
-      </p>
-      <div class="caja-demo">
-        Esta caja tiene width, padding, border, margin y border-radius.
-      </div>
-    </section>
-
-    <section>
-      <h2>Tarjetas con Flexbox</h2>
-      <p>
-        Con <code>display: flex</code> las tarjetas se acomodan en una fila y,
-        en pantallas pequeñas, pasan a otra línea.
-      </p>
-      <div class="contenedor">
-        <article class="tarjeta">
-          <h3>HTML</h3>
-          <p>Define la estructura y el contenido de la página.</p>
-        </article>
-        <article class="tarjeta">
-          <h3>CSS</h3>
-          <p>Controla el aspecto: colores, espacios y distribución.</p>
-        </article>
-        <article class="tarjeta">
-          <h3>JavaScript</h3>
-          <p>Agrega comportamiento e interactividad.</p>
-        </article>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>Actividad A6 &ndash; Fundamentos | Grupo 224 | AGO-DIC 2026</p>
-  </footer>
-
+  <h2>Equipo</h2>
+  <ul>
+    <li>Santiago Barboza Valero - 2095602</li>
+    <li>Jairany López Ramos - 2145407</li>
+    <li>Carlos Emmanuel Oyervides Miguel - 2169716</li>
+    <li>Mauricio José Marcos Mecías - 2147654</li>
+  </ul>
+  <p>Grupo 224 | Salón 4206 | Hora V1 | Martes | Carrera ITS<br>Laboratorio de Programación Web - Dr. Agustín Cortes Coss | AGO-DIC 2026</p>
 </body>
 </html>

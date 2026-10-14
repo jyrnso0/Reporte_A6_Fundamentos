@@ -1,0 +1,10 @@
+/* CSS EXTERNO: se aplica al body desde estilos.css */
+body {
+  background-color: #eaf4f4;
+  color: #17323a;
+  font-family: Arial, sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.5;
+}

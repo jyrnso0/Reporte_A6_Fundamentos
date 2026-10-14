@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 4 - Portafolio del equipo</title>
+  <style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background-color: #eef3f8;
+  color: #14213d;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+header { background-color: #14213d; color: #ffffff; text-align: center; padding: 20px; }
+header h1 { margin: 0 0 4px; }
+header p { margin: 0; }
+nav { background-color: #0a7ea4; }
+nav ul { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 24px; list-style: none; margin: 0; padding: 12px; }
+nav a { color: #ffffff; text-decoration: none; font-weight: bold; }
+nav a:hover { text-decoration: underline; }
+.contenido { display: flex; flex-wrap: wrap; gap: 20px; max-width: 1000px; margin: 20px auto; padding: 0 16px; }
+main { flex: 3 1 480px; }
+aside { flex: 1 1 220px; background-color: #ffffff; padding: 16px; border-radius: 10px; align-self: flex-start; }
+section { background-color: #ffffff; padding: 16px 20px; margin-bottom: 20px; border-radius: 10px; }
+section h2, aside h2 { margin-top: 0; color: #0a7ea4; }
+.integrantes { display: flex; flex-wrap: wrap; gap: 12px; }
+.integrante { flex: 1 1 200px; padding: 12px; background-color: #eef3f8; border-left: 4px solid #0a7ea4; }
+.integrante h3 { margin: 0 0 4px; font-size: 1em; }
+img { max-width: 100%; height: auto; border-radius: 8px; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #b8c4d6; padding: 6px; text-align: left; }
+th { background-color: #14213d; color: #ffffff; }
+footer { background-color: #14213d; color: #ffffff; text-align: center; padding: 16px; }
+footer a { color: #ffffff; }
+</style>
+</head>
+<body>
+  <header id="inicio">
+    <h1>Portafolio del equipo</h1>
+    <p>Laboratorio de Programación Web - UANL FIME</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#equipo">Equipo</a></li>
+      <li><a href="#trabajos">Trabajos</a></li>
+      <li><a href="#contacto">Datos del grupo</a></li>
+    </ul>
+  </nav>
+  <div class="contenido">
+    <main>
+      <section>
+        <h2>Quiénes somos</h2>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2Q2ZTZmNSIvPjx0ZXh0IHg9IjEwMCIgeT0iMTI4IiBmb250LXNpemU9IjkwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7wn5K7PC90ZXh0Pjwvc3ZnPgo=" alt="Ilustración de una computadora" width="160" height="160">
+        <p>Somos un equipo de la carrera ITS que practica HTML y CSS en el Laboratorio de Programación Web. Aquí reunimos los ejercicios de la Actividad A6.</p>
+      </section>
+      <section id="equipo">
+        <h2>Integrantes</h2>
+        <div class="integrantes">
+          <div class="integrante"><h3>Santiago Barboza Valero</h3><p>Matrícula 2095602</p></div>
+          <div class="integrante"><h3>Jairany López Ramos</h3><p>Matrícula 2145407</p></div>
+          <div class="integrante"><h3>Carlos Emmanuel Oyervides Miguel</h3><p>Matrícula 2169716</p></div>
+          <div class="integrante"><h3>Mauricio José Marcos Mecías</h3><p>Matrícula 2147654</p></div>
+        </div>
+      </section>
+      <section id="trabajos">
+        <h2>Ejercicios de la A6</h2>
+        <ol>
+          <li><a href="ejercicio1.html">Veterinaria Huellitas</a>: tres formas de aplicar CSS</li>
+          <li><a href="ejercicio2.html">Repostería Dulce Antojo</a>: selectores, colores y tipografía</li>
+          <li><a href="ejercicio3.html">Tienda ElectroLab</a>: modelo de caja</li>
+          <li>Este portafolio: estructura semántica y flexbox</li>
+        </ol>
+        <p>Validadores usados: <a href="https://validator.w3.org/" target="_blank" rel="noopener">HTML (W3C)</a> y <a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener">CSS (W3C)</a>.</p>
+      </section>
+    </main>
+    <aside id="contacto">
+      <h2>Datos del grupo</h2>
+      <table>
+        <tr><th>Grupo</th><td>224</td></tr>
+        <tr><th>Salón</th><td>4206</td></tr>
+        <tr><th>Hora</th><td>V1</td></tr>
+        <tr><th>Día</th><td>Martes</td></tr>
+        <tr><th>Carrera</th><td>ITS</td></tr>
+      </table>
+      <p>Docente: Dr. Agustín Cortes Coss</p>
+    </aside>
+  </div>
+  <footer>
+    <p>Actividad A6 - Fundamentos | AGO-DIC 2026</p>
+    <p><a href="#inicio">Volver al inicio</a></p>
+  </footer>
+</body>
+</html>

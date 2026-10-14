@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 1 - Modelo de caja y Flexbox</title>
+  <link rel="stylesheet" href="estilos1.css">
+</head>
+<body>
+
+
+  <header>
+    <h1>Ejercicio 1: Modelo de caja y Flexbox</h1>
+    <p>Actividad A6 &ndash; Fundamentos | Laboratorio de Programación Web</p>
+  </header>
+
+  <main>
+
+    <section class="instrucciones">
+      <h2>Instrucciones del ejercicio</h2>
+      <p><strong>Objetivo:</strong> comprender el modelo de caja y distribuir elementos con Flexbox.</p>
+      <ol>
+        <li>Crea un <code>div</code> y aplícale <code>width</code>, <code>padding</code>, <code>border</code>, <code>margin</code> y <code>border-radius</code>.</li>
+        <li>Crea un contenedor con tres tarjetas (<code>article</code>), cada una con título y texto.</li>
+        <li>Al contenedor aplícale <code>display: flex</code>, <code>flex-wrap: wrap</code> y <code>gap</code>.</li>
+        <li>A las tarjetas aplícales <code>flex: 1 1 200px</code> para que se ajusten al ancho disponible.</li>
+        <li>Agrega un efecto <code>:hover</code> a las tarjetas con <code>transform</code>.</li>
+        <li>Agrega una regla <code>@media (max-width: 600px)</code> para pantallas pequeñas.</li>
+      </ol>
+      <p><strong>Entrega:</strong> archivos <code>.html</code> y <code>.css</code> y capturas del resultado en pantalla completa y con la ventana reducida.</p>
+    </section>
+
+    <section>
+      <h2>El modelo de caja</h2>
+      <p>
+        Todo elemento HTML es una caja formada por cuatro capas: el contenido,
+        el <strong>padding</strong> (espacio interior), el <strong>border</strong>
+        (borde) y el <strong>margin</strong> (espacio exterior).
+      </p>
+      <div class="caja-demo">
+        Esta caja tiene width, padding, border, margin y border-radius.
+      </div>
+    </section>
+
+    <section>
+      <h2>Tarjetas con Flexbox</h2>
+      <p>
+        Con <code>display: flex</code> las tarjetas se acomodan en una fila y,
+        en pantallas pequeñas, pasan a otra línea.
+      </p>
+      <div class="contenedor">
+        <article class="tarjeta">
+          <h3>HTML</h3>
+          <p>Define la estructura y el contenido de la página.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>CSS</h3>
+          <p>Controla el aspecto: colores, espacios y distribución.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>JavaScript</h3>
+          <p>Agrega comportamiento e interactividad.</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Actividad A6 &ndash; Fundamentos | Grupo 224 | AGO-DIC 2026</p>
+  </footer>
+
+</body>
+</html>
